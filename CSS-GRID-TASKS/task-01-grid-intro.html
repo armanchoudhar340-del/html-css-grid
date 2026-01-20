@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1: CSS Grid Introduction</title>
+    <link rel="stylesheet" href="task-01-grid-intro.css">
+</head>
+
+<body>
+    <header>
+        <h1>TASK 1: CSS GRID INTRODUCTION</h1>
+        <p>In this task, we will initialize a grid container using <code>display: grid</code>.</p>
+    </header>
+
+    <main>
+        <!-- The Grid Container -->
+        <div class="grid-container">
+            <div class="grid-item">Item 1</div>
+            <div class="grid-item">Item 2</div>
+            <div class="grid-item">Item 3</div>
+            <div class="grid-item">Item 4</div>
+            <div class="grid-item">Item 5</div>
+            <div class="grid-item">Item 6</div>
+        </div>
+
+        <section class="answers">
+            <h2>Answers</h2>
+            <div class="question-block">
+                <p><strong>1. Why does the layout look the same as a normal block layout?</strong></p>
+                <p>When you only use <code>display: grid</code> without defining columns or rows, the grid defaults to a
+                    single column that spans the full width, just like normal block elements (divs).</p>
+            </div>
+            <div class="question-block">
+                <p><strong>2. What is a Grid Container?</strong></p>
+                <p>The parent element that has <code>display: grid</code> applied to it. It holds all the grid items.
+                </p>
+            </div>
+            <div class="question-block">
+                <p><strong>3. What is a Grid Item?</strong></p>
+                <p>The direct child elements of the Grid Container. In this demo, the 6 divs inside are the grid items.
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

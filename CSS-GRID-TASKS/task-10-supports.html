@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 10: CSS @supports</title>
+    <link rel="stylesheet" href="task-10-supports.css">
+</head>
+
+<body>
+    <header>
+        <h1>TASK 10: CSS @supports (Feature Queries)</h1>
+        <p>Learn how to detect browser support for modern CSS features.</p>
+    </header>
+
+    <main>
+        <h3>Browser Support Test</h3>
+        <div class="test-container">
+            <div class="grid-card">Item A</div>
+            <div class="grid-card">Item B</div>
+            <div class="grid-card">Item C</div>
+        </div>
+
+        <section class="answers">
+            <h2>Answers</h2>
+            <div class="question-block">
+                <p><strong>1. What is '@supports'?</strong></p>
+                <p>It is a CSS rule that allows you to check if a browser supports a certain property (like
+                    <code>display: grid</code>) before applying specific styles.</p>
+            </div>
+            <div class="question-block">
+                <p><strong>2. Why is this important for older browsers?</strong></p>
+                <p>It allows you to provide "fallbacks". For example, you can write simple code for old browsers and
+                    modern grid code only for browsers that understand it, preventing your layout from breaking.</p>
+            </div>
+            <div class="question-block">
+                <p><strong>3. How does '@supports' help developers?</strong></p>
+                <p>It gives developers the confidence to use new CSS features while still ensuring that users on old
+                    browsers have a readable and functional website.</p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

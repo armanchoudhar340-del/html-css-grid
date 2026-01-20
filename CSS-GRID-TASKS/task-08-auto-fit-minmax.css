@@ -1,0 +1,52 @@
+/* AUTO-FIT, MINMAX & RESPONSIVE GRID */
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    background-color: #f7f1e3;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* 
+   THE POWERFUL RESPONSIVE GRID 
+   No Media Queries needed!
+*/
+.grid-container {
+    display: grid;
+    /* 
+       Repeat(auto-fit, ...) tells the grid to make as many columns 
+       as it can fit, but each must be at least 200px.
+    */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* CARD ITEM STYLES */
+.card {
+    background: linear-gradient(135deg, #706fd3, #474787);
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ANSWERS SECTION */
+.answers {
+    margin-top: 50px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+}

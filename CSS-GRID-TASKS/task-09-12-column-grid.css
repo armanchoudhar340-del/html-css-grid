@@ -1,0 +1,73 @@
+/* 12-COLUMN GRID SYSTEM */
+
+body {
+    font-family: 'Inter', sans-serif;
+    padding: 30px;
+    background-color: #f1f2f6;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* 
+   12-COLUMN CONTAINER 
+   The industry standard for flexible layouts.
+*/
+.grid-container {
+    display: grid;
+    /* Divide the space into 12 equal fractions */
+    grid-template-columns: repeat(12, 1fr);
+    gap: 15px;
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #ced4da;
+    border-radius: 8px;
+}
+
+/* GENERAL ITEM STYLE */
+.grid-item {
+    background-color: #2f3542;
+    color: #ffa502;
+    padding: 20px;
+    text-align: center;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* 
+   SPANNING CLASSES 
+   Common utilities used in grid systems like Bootstrap.
+*/
+.span-12 {
+    grid-column: span 12;
+    background-color: #57606f;
+    color: white;
+}
+
+.span-9 {
+    grid-column: span 9;
+}
+
+.span-6 {
+    grid-column: span 6;
+}
+
+.span-4 {
+    grid-column: span 4;
+}
+
+.span-3 {
+    grid-column: span 3;
+}
+
+/* ANSWERS */
+.answers {
+    margin-top: 40px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}

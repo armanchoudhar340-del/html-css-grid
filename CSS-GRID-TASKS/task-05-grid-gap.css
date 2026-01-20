@@ -1,0 +1,56 @@
+/* GRID GAPS */
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: #f8f9fa;
+    padding: 20px;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* 
+   GRID CONTAINER 
+   Using gap to create spacing.
+*/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* This shorthand adds 20px space between EVERYTHING */
+    gap: 20px;
+
+    background-color: #dee2e6;
+    padding: 20px;
+    /* Inside padding for the container */
+    border-radius: 12px;
+}
+
+/* GRID ITEM STYLES */
+.grid-item {
+    background-color: #17a2b8;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+    /* Fun hover effect */
+    background-color: #138496;
+}
+
+/* ANSWERS SECTION */
+.answers {
+    margin-top: 50px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4: Grid Rows</title>
+    <link rel="stylesheet" href="task-04-grid-rows.css">
+</head>
+
+<body>
+    <header>
+        <h1>TASK 4: GRID ROWS</h1>
+        <p>Control the height of rows using <code>grid-template-rows</code> and <code>auto</code>.</p>
+    </header>
+
+    <main>
+        <div class="grid-container">
+            <div class="grid-item">Row 1 (Fixed 100px)</div>
+            <div class="grid-item">Row 2 (Auto height) - This box will grow if you add more text.
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="grid-item">Row 3 (Auto height)</div>
+        </div>
+
+        <section class="answers">
+            <h2>Answers</h2>
+            <div class="question-block">
+                <p><strong>1. What does 'auto' do in grid-template-rows?</strong></p>
+                <p>It makes the row height expand to fit the content inside it. If you have more text, the row gets
+                    taller.</p>
+            </div>
+            <div class="question-block">
+                <p><strong>2. How do you set all rows to be 150px?</strong></p>
+                <p>You can use: <code>grid-template-rows: 150px 150px 150px;</code> or
+                    <code>grid-template-rows: repeat(3, 150px);</code></p>
+            </div>
+            <div class="question-block">
+                <p><strong>3. What is the difference between grid-template-columns and grid-template-rows?</strong></p>
+                <p>Columns define the horizontal space (width), while rows define the vertical space (height).</p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

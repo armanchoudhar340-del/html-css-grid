@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 7: Grid Template Areas</title>
+    <link rel="stylesheet" href="task-07-template-areas.css">
+</head>
+
+<body>
+    <header class="page-header">
+        <h1>TASK 7: GRID TEMPLATE AREAS</h1>
+        <p>Design a full page layout by naming areas of your grid.</p>
+    </header>
+
+    <main class="grid-layout">
+        <header class="grid-header">Header</header>
+        <aside class="grid-sidebar">Sidebar</aside>
+        <section class="grid-content">Main Content</section>
+        <footer class="grid-footer">Footer</footer>
+    </main>
+
+    <section class="answers">
+        <h2>Answers</h2>
+        <div class="question-block">
+            <p><strong>1. What is grid-template-areas?</strong></p>
+            <p>It's a visual way to define the layout by giving names to sections of the grid and mapping them where
+                they should appear.</p>
+        </div>
+        <div class="question-block">
+            <p><strong>2. How do you make an area span multiple cells?</strong></p>
+            <p>By repeating the area name in the <code>grid-template-areas</code> string. For example:
+                <code>"header header header"</code> makes the header span 3 columns.</p>
+        </div>
+        <div class="question-block">
+            <p><strong>3. Why is this useful for rearranging layouts?</strong></p>
+            <p>Because you can change the entire structure for mobile or desktop just by changing the
+                <code>grid-template-areas</code> string in a media query, without changing the HTML.</p>
+        </div>
+    </section>
+</body>
+
+</html>

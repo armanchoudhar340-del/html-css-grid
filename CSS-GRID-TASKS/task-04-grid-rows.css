@@ -1,0 +1,49 @@
+/* GRID ROWS */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdfefe;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* 
+   GRID CONTAINER 
+   Defining specific row heights.
+*/
+.grid-container {
+    display: grid;
+    /* First row 100px, others based on content */
+    grid-template-rows: 100px auto auto;
+    gap: 15px;
+    background-color: #f1f1f1;
+    padding: 15px;
+    border: 2px solid #34495e;
+}
+
+/* GRID ITEM STYLES */
+.grid-item {
+    background-color: #9b59b6;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* ANSWERS SECTION */
+.answers {
+    margin-top: 40px;
+    background-color: #fff;
+    padding: 25px;
+    border-top: 6px solid #9b59b6;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
