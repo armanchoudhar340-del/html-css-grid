@@ -1,61 +1,85 @@
-/* CSS GRID INTRODUCTION */
+/* TASK 1: CSS GRID INTRODUCTION */
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
     padding: 20px;
+    color: #333;
 }
 
 header {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 h1 {
-    color: #333;
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
 
-/* 
-   GRID CONTAINER STYLES
-   This is the parent element where we activate the grid layout.
-*/
+/* GRID CONTAINER */
 .grid-container {
     display: grid;
-    /* This turns the div into a grid container */
-    background-color: #e2e2e2;
-    padding: 10px;
-    border: 3px dashed #999;
+    /* In Task 1, we only use display: grid. 
+       No columns are defined yet, so they stack. */
+    gap: 0;
+    border: 1px solid #000;
 }
 
-/* 
-   GRID ITEM STYLES
-   These are the direct children of the container.
-*/
+/* GRID ITEM STYLES */
 .grid-item {
-    background-color: #3498db;
-    color: white;
-    padding: 20px;
+    color: #000;
+    padding: 15px;
+    border: 1px solid #000;
+    text-align: left;
+}
+
+/* Colors for each box */
+.grid-item:nth-child(1) {
+    background-color: #ffcccc;
+}
+
+/* Red */
+.grid-item:nth-child(2) {
+    background-color: #ffffcc;
+}
+
+/* Yellow */
+.grid-item:nth-child(3) {
+    background-color: #ccffcc;
+}
+
+/* Green */
+.grid-item:nth-child(4) {
+    background-color: #ccccff;
+}
+
+/* Blue */
+.grid-item:nth-child(5) {
+    background-color: #ffebcc;
+}
+
+/* Orange */
+.grid-item:nth-child(6) {
+    background-color: #f2ccff;
+}
+
+/* Purple */
+
+.grid-item h3 {
+    margin-top: 0;
+    font-size: 1.1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 5px;
+}
+
+.grid-item p {
+    margin: 10px 0 0 0;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.grid-item strong {
+    display: block;
     margin-bottom: 5px;
-    /* Added just for visibility in Task 1 */
-    text-align: center;
-    border: 1px solid #2980b9;
-    font-size: 1.2rem;
-}
-
-/* ANSWERS SECTION */
-.answers {
-    margin-top: 50px;
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.question-block {
-    margin-bottom: 20px;
-}
-
-.question-block p strong {
-    color: #2c3e50;
 }

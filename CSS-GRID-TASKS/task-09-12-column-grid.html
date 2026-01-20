@@ -4,47 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 9: 12-Column Grid System</title>
+    <title>Task 9: 12-Column Grid</title>
     <link rel="stylesheet" href="task-09-12-column-grid.css">
 </head>
 
 <body>
     <header>
-        <h1>TASK 9: 12-COLUMN GRID SYSTEM</h1>
-        <p>Build a professional 12-column grid layout, commonly used by web developers.</p>
+        <p>Master the industry-standard 12-column grid system using <code>repeat(12, 1fr)</code>.</p>
     </header>
 
     <main>
-        <h3>Standard 12-Column Layout</h3>
+        <!-- The Grid Container -->
         <div class="grid-container">
-            <div class="grid-item span-12">Full Width (12/12)</div>
-            <div class="grid-item span-6">Half Width (6/12)</div>
-            <div class="grid-item span-6">Half Width (6/12)</div>
-            <div class="grid-item span-4">One Third (4/12)</div>
-            <div class="grid-item span-4">One Third (4/12)</div>
-            <div class="grid-item span-4">One Third (4/12)</div>
-            <div class="grid-item span-3">One Fourth (3/12)</div>
-            <div class="grid-item span-9">Three Fourths (9/12)</div>
+            <div class="grid-item span-4">
+                <h3>Box 1 (Span 4)</h3>
+                <p><strong>Why 12 columns?</strong></p>
+                <p>12 is divisible by 2, 3, 4, and 6, making it extremely versatile for creating complex layouts.</p>
+            </div>
+            <div class="grid-item span-8">
+                <h3>Box 2 (Span 8)</h3>
+                <p><strong>How to define it?</strong></p>
+                <p>Use <code>grid-template-columns: repeat(12, 1fr);</code> on the parent container.</p>
+            </div>
+            <div class="grid-item span-6">
+                <h3>Box 3 (Span 6)</h3>
+                <p><strong>What is a col-span?</strong></p>
+                <p>Items span a specific number of tracks using <code>grid-column: span [number];</code>.</p>
+            </div>
+            <div class="grid-item span-6">
+                <h3>Box 4 (Span 6)</h3>
+                <p><strong>Standard layouts?</strong></p>
+                <p>Common layouts include 4-col (span 3), 3-col (span 4), and 2-col (span 6) structures.</p>
+            </div>
+            <div class="grid-item span-12">
+                <h3>Box 5 (Full Width Span 12)</h3>
+                <p><strong>Can we nest grids?</strong></p>
+                <p>Yes! A grid item can also be a grid container, allowing for deeply nested and complex designs.</p>
+            </div>
+            <div class="grid-item span-12">
+                <h3>Box 6 (Span 12)</h3>
+                <p><strong>Observation:</strong></p>
+                <p>By spanning these boxes across 12 invisible columns, we can create precise and aligned layouts.</p>
+            </div>
         </div>
-
-        <section class="answers">
-            <h2>Answers</h2>
-            <div class="question-block">
-                <p><strong>1. Why is 12 the "magic number" for grid systems?</strong></p>
-                <p>Because 12 is divisible by many numbers: 2, 3, 4, and 6. This makes it very easy to create layouts
-                    that are 1/2, 1/3, 1/4, or even 1/6 of the width.</p>
-            </div>
-            <div class="question-block">
-                <p><strong>2. How do you create 12 columns in CSS?</strong></p>
-                <p>Using <code>grid-template-columns: repeat(12, 1fr);</code>. This divides the space into 12 equal
-                    vertical slices.</p>
-            </div>
-            <div class="question-block">
-                <p><strong>3. How do you make an item span 3 columns?</strong></p>
-                <p>By using <code>grid-column: span 3;</code>. This is a shorthand that tells the item to cover the next
-                    3 available columns.</p>
-            </div>
-        </section>
     </main>
 </body>
 

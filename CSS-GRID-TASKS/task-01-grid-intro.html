@@ -10,39 +10,45 @@
 
 <body>
     <header>
-        <h1>TASK 1: CSS GRID INTRODUCTION</h1>
         <p>In this task, we will initialize a grid container using <code>display: grid</code>.</p>
     </header>
 
     <main>
         <!-- The Grid Container -->
         <div class="grid-container">
-            <div class="grid-item">Item 1</div>
-            <div class="grid-item">Item 2</div>
-            <div class="grid-item">Item 3</div>
-            <div class="grid-item">Item 4</div>
-            <div class="grid-item">Item 5</div>
-            <div class="grid-item">Item 6</div>
+            <div class="grid-item">
+                <h3>Box 1</h3>
+                <p><strong>What does <code>display: grid</code> do?</strong></p>
+                <p>It turns the element into a grid container, enabling grid layout for its direct children.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Box 2</h3>
+                <p><strong>Why are the items stacked?</strong></p>
+                <p>By default, a grid creates a single column, so items stack vertically like normal block elements.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Box 3</h3>
+                <p><strong>What is a Grid Container?</strong></p>
+                <p>The parent element that has <code>display: grid</code> applied. It defines the grid context.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Box 4</h3>
+                <p><strong>What is a Grid Item?</strong></p>
+                <p>Any direct child of a grid container automatically becomes a grid item.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Box 5</h3>
+                <p><strong>Can we use <code>inline-grid</code>?</strong></p>
+                <p>Yes! <code>display: inline-grid</code> makes the container behave like an inline element instead of a
+                    block.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Box 6</h3>
+                <p><strong>Observation:</strong></p>
+                <p>Even without columns defined, the items now respect the grid container's padding and gap properties.
+                </p>
+            </div>
         </div>
-
-        <section class="answers">
-            <h2>Answers</h2>
-            <div class="question-block">
-                <p><strong>1. Why does the layout look the same as a normal block layout?</strong></p>
-                <p>When you only use <code>display: grid</code> without defining columns or rows, the grid defaults to a
-                    single column that spans the full width, just like normal block elements (divs).</p>
-            </div>
-            <div class="question-block">
-                <p><strong>2. What is a Grid Container?</strong></p>
-                <p>The parent element that has <code>display: grid</code> applied to it. It holds all the grid items.
-                </p>
-            </div>
-            <div class="question-block">
-                <p><strong>3. What is a Grid Item?</strong></p>
-                <p>The direct child elements of the Grid Container. In this demo, the 6 divs inside are the grid items.
-                </p>
-            </div>
-        </section>
     </main>
 </body>
 

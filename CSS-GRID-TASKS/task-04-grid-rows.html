@@ -10,38 +10,44 @@
 
 <body>
     <header>
-        <h1>TASK 4: GRID ROWS</h1>
-        <p>Control the height of rows using <code>grid-template-rows</code> and <code>auto</code>.</p>
+        <p>Learn how to control the height of rows using <code>grid-template-rows</code>.</p>
     </header>
 
     <main>
+        <!-- The Grid Container -->
         <div class="grid-container">
-            <div class="grid-item">Row 1 (Fixed 100px)</div>
-            <div class="grid-item">Row 2 (Auto height) - This box will grow if you add more text.
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.</p>
+            <div class="grid-item">
+                <h3>Box 1</h3>
+                <p><strong>What does <code>grid-template-rows</code> do?</strong></p>
+                <p>It defines the height of the rows in the grid layout.</p>
             </div>
-            <div class="grid-item">Row 3 (Auto height)</div>
+            <div class="grid-item">
+                <h3>Box 2</h3>
+                <p><strong>How many rows are here?</strong></p>
+                <p>Two rows are explicitly defined in this example (e.g., 200px and 150px).</p>
+            </div>
+            <div class="grid-item">
+                <h3>Box 3</h3>
+                <p><strong>Content overflow?</strong></p>
+                <p>If content is larger than the fixed height, it might overflow unless <code>overflow</code> is
+                    handled.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Box 4</h3>
+                <p><strong>What is <code>min-content</code>?</strong></p>
+                <p>It sets the row height to the minimum size possible without causing overflow.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Box 5</h3>
+                <p><strong>What is <code>max-content</code>?</strong></p>
+                <p>It sets the row height to perfectly fit the largest piece of content in that row.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Box 6</h3>
+                <p><strong>Observation:</strong></p>
+                <p>Rows can have different heights independently, allowing for structured vertical sections.</p>
+            </div>
         </div>
-
-        <section class="answers">
-            <h2>Answers</h2>
-            <div class="question-block">
-                <p><strong>1. What does 'auto' do in grid-template-rows?</strong></p>
-                <p>It makes the row height expand to fit the content inside it. If you have more text, the row gets
-                    taller.</p>
-            </div>
-            <div class="question-block">
-                <p><strong>2. How do you set all rows to be 150px?</strong></p>
-                <p>You can use: <code>grid-template-rows: 150px 150px 150px;</code> or
-                    <code>grid-template-rows: repeat(3, 150px);</code></p>
-            </div>
-            <div class="question-block">
-                <p><strong>3. What is the difference between grid-template-columns and grid-template-rows?</strong></p>
-                <p>Columns define the horizontal space (width), while rows define the vertical space (height).</p>
-            </div>
-        </section>
     </main>
 </body>
 

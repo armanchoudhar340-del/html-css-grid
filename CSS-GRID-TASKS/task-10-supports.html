@@ -4,42 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 10: CSS @supports</title>
+    <title>Task 10: Supports Query</title>
     <link rel="stylesheet" href="task-10-supports.css">
 </head>
 
 <body>
     <header>
-        <h1>TASK 10: CSS @supports (Feature Queries)</h1>
-        <p>Learn how to detect browser support for modern CSS features.</p>
+        <p>Learn how to use <code>@supports</code> for browser compatibility and progressive enhancement.</p>
     </header>
 
     <main>
-        <h3>Browser Support Test</h3>
-        <div class="test-container">
-            <div class="grid-card">Item A</div>
-            <div class="grid-card">Item B</div>
-            <div class="grid-card">Item C</div>
+        <!-- The Grid Container (Hidden if Grid is not supported) -->
+        <div class="grid-container">
+            <div class="grid-item">
+                <h3>Box 1</h3>
+                <p><strong>What is <code>@supports</code>?</strong></p>
+                <p>A CSS feature query rule that checks if a browser supports a specific CSS property/value.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Box 2</h3>
+                <p><strong>Why use it for Grid?</strong></p>
+                <p>It allows you to provide a fallback layout (like Flexbox or Floats) for older browsers.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Box 3</h3>
+                <p><strong>How to write it?</strong></p>
+                <p><code>@supports (display: grid) { ... }</code> wraps your grid-specific styles safely.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Box 4</h3>
+                <p><strong>Progressive Enhancement?</strong></p>
+                <p>Building a basic layout first, then adding Grid as an "upgrade" for modern browsers.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Box 5</h3>
+                <p><strong>Is it still necessary?</strong></p>
+                <p>Grid support is now excellent, but <code>@supports</code> is vital for newer features like Subgrid.
+                </p>
+            </div>
+            <div class="grid-item">
+                <h3>Box 6</h3>
+                <p><strong>Observation:</strong></p>
+                <p>If you see these boxes in columns, your browser passed the <code>@supports</code> query!</p>
+            </div>
         </div>
 
-        <section class="answers">
-            <h2>Answers</h2>
-            <div class="question-block">
-                <p><strong>1. What is '@supports'?</strong></p>
-                <p>It is a CSS rule that allows you to check if a browser supports a certain property (like
-                    <code>display: grid</code>) before applying specific styles.</p>
-            </div>
-            <div class="question-block">
-                <p><strong>2. Why is this important for older browsers?</strong></p>
-                <p>It allows you to provide "fallbacks". For example, you can write simple code for old browsers and
-                    modern grid code only for browsers that understand it, preventing your layout from breaking.</p>
-            </div>
-            <div class="question-block">
-                <p><strong>3. How does '@supports' help developers?</strong></p>
-                <p>It gives developers the confidence to use new CSS features while still ensuring that users on old
-                    browsers have a readable and functional website.</p>
-            </div>
-        </section>
+        <!-- Fallback Message (Visible only if Grid is NOT supported) -->
+        <div class="fallback-msg">
+            <p>Your browser does not support CSS Grid. This is the fallback message.</p>
+        </div>
     </main>
 </body>
 

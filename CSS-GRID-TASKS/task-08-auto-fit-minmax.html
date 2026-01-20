@@ -4,47 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 8: Auto-fit, Minmax & Responsive Grid</title>
+    <title>Task 8: Auto-fit & Minmax</title>
     <link rel="stylesheet" href="task-08-auto-fit-minmax.css">
 </head>
 
 <body>
     <header>
-        <h1>TASK 8: AUTO-FIT, MINMAX & RESPONSIVE GRID</h1>
-        <p>Create a grid that automatically adds and wraps columns WITHOUT media queries.</p>
+        <p>Create truly responsive layouts without media queries using <code>repeat(auto-fit, minmax())</code>.</p>
     </header>
 
     <main>
-        <h3>Resize your browser to see the boxes wrap!</h3>
+        <!-- The Grid Container -->
         <div class="grid-container">
-            <div class="card">Card 1</div>
-            <div class="card">Card 2</div>
-            <div class="card">Card 3</div>
-            <div class="card">Card 4</div>
-            <div class="card">Card 5</div>
-            <div class="card">Card 6</div>
-            <div class="card">Card 7</div>
-            <div class="card">Card 8</div>
+            <div class="grid-item">
+                <h3>Box 1</h3>
+                <p><strong>What does <code>minmax()</code> do?</strong></p>
+                <p>It sets a minimum and maximum size (e.g., <code>minmax(200px, 1fr)</code>) for a grid track.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Box 2</h3>
+                <p><strong>What is <code>auto-fit</code>?</strong></p>
+                <p>It tells the grid to create as many columns as possible that meet the minimum size.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Box 3</h3>
+                <p><strong>Responsive Benefit?</strong></p>
+                <p>The layout stays responsive on all screens without needing any CSS Media Queries.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Box 4</h3>
+                <p><strong>Auto-fit vs Auto-fill?</strong></p>
+                <p><code>auto-fit</code> stretches items to fill the track, while <code>auto-fill</code> leaves empty
+                    space.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Box 5</h3>
+                <p><strong>When to use this?</strong></p>
+                <p>Commonly used for card-based layouts, photo galleries, and product listings.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Box 6</h3>
+                <p><strong>Observation:</strong></p>
+                <p>Resize the window to see boxes wrap to new rows and adjust their width automatically.</p>
+            </div>
         </div>
-
-        <section class="answers">
-            <h2>Answers</h2>
-            <div class="question-block">
-                <p><strong>1. What does 'minmax(200px, 1fr)' do?</strong></p>
-                <p>It means the column can never be smaller than 200px, but it can grow to take up 1 fractional part of
-                    the space if there is room.</p>
-            </div>
-            <div class="question-block">
-                <p><strong>2. What is the difference between 'auto-fit' and 'auto-fill'?</strong></p>
-                <p><code>auto-fit</code> stretches the items to fill the entire row, while <code>auto-fill</code> keeps
-                    the columns at their calculated width even if there aren't enough items to fill the row.</p>
-            </div>
-            <div class="question-block">
-                <p><strong>3. Why is this useful for responsive design?</strong></p>
-                <p>Because it creates a "liquid" layout. As the screen gets smaller, columns automatically drop to the
-                    next row when they hit the 200px minimum, making it mobile-friendly instantly.</p>
-            </div>
-        </section>
     </main>
 </body>
 

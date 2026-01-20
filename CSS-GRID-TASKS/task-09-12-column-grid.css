@@ -1,73 +1,101 @@
-/* 12-COLUMN GRID SYSTEM */
+/* TASK 9: 12-COLUMN GRID */
 
 body {
-    font-family: 'Inter', sans-serif;
-    padding: 30px;
-    background-color: #f1f2f6;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    padding: 20px;
+    color: #333;
 }
 
 header {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
-/* 
-   12-COLUMN CONTAINER 
-   The industry standard for flexible layouts.
-*/
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* GRID CONTAINER - 12 COLUMNS */
 .grid-container {
     display: grid;
-    /* Divide the space into 12 equal fractions */
     grid-template-columns: repeat(12, 1fr);
-    gap: 15px;
-    background-color: white;
-    padding: 20px;
-    border: 2px solid #ced4da;
-    border-radius: 8px;
+    gap: 0;
+    border: 1px solid #000;
 }
 
-/* GENERAL ITEM STYLE */
+/* GRID ITEM STYLES */
 .grid-item {
-    background-color: #2f3542;
-    color: #ffa502;
-    padding: 20px;
-    text-align: center;
-    border-radius: 4px;
-    font-weight: bold;
-    font-size: 0.9rem;
+    color: #000;
+    padding: 15px;
+    border: 1px solid #000;
+    text-align: left;
 }
 
-/* 
-   SPANNING CLASSES 
-   Common utilities used in grid systems like Bootstrap.
-*/
-.span-12 {
-    grid-column: span 12;
-    background-color: #57606f;
-    color: white;
+/* Spanning classes */
+.span-4 {
+    grid-column: span 4;
 }
 
-.span-9 {
-    grid-column: span 9;
+.span-8 {
+    grid-column: span 8;
 }
 
 .span-6 {
     grid-column: span 6;
 }
 
-.span-4 {
-    grid-column: span 4;
+.span-12 {
+    grid-column: span 12;
 }
 
-.span-3 {
-    grid-column: span 3;
+/* Colors for each box */
+.grid-item:nth-child(1) {
+    background-color: #ffcccc;
 }
 
-/* ANSWERS */
-.answers {
-    margin-top: 40px;
-    background: #fff;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+/* Red */
+.grid-item:nth-child(2) {
+    background-color: #ffffcc;
+}
+
+/* Yellow */
+.grid-item:nth-child(3) {
+    background-color: #ccffcc;
+}
+
+/* Green */
+.grid-item:nth-child(4) {
+    background-color: #ccccff;
+}
+
+/* Blue */
+.grid-item:nth-child(5) {
+    background-color: #ffebcc;
+}
+
+/* Orange */
+.grid-item:nth-child(6) {
+    background-color: #f2ccff;
+}
+
+/* Purple */
+
+.grid-item h3 {
+    margin-top: 0;
+    font-size: 1.1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 5px;
+}
+
+.grid-item p {
+    margin: 10px 0 0 0;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.grid-item strong {
+    display: block;
+    margin-bottom: 5px;
 }

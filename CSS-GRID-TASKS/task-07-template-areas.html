@@ -4,41 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 7: Grid Template Areas</title>
+    <title>Task 7: Template Areas</title>
     <link rel="stylesheet" href="task-07-template-areas.css">
 </head>
 
 <body>
-    <header class="page-header">
-        <h1>TASK 7: GRID TEMPLATE AREAS</h1>
-        <p>Design a full page layout by naming areas of your grid.</p>
+    <header>
+        <p>Define your layout visually using <code>grid-template-areas</code>.</p>
     </header>
 
-    <main class="grid-layout">
-        <header class="grid-header">Header</header>
-        <aside class="grid-sidebar">Sidebar</aside>
-        <section class="grid-content">Main Content</section>
-        <footer class="grid-footer">Footer</footer>
+    <main>
+        <!-- The Grid Container -->
+        <div class="grid-container">
+            <div class="grid-item area-header">
+                <h3>Box 1 (Header)</h3>
+                <p><strong>What are named areas?</strong></p>
+                <p>They allow you to name sections of your grid and place items into them visually.</p>
+            </div>
+            <div class="grid-item area-sidebar">
+                <h3>Box 2 (Sidebar)</h3>
+                <p><strong>How to name an area?</strong></p>
+                <p>Use <code>grid-area: header;</code> on the item, then define it in the container.</p>
+            </div>
+            <div class="grid-item area-content">
+                <h3>Box 3 (Content)</h3>
+                <p><strong>What is the benefit?</strong></p>
+                <p>It creates a highly readable ASCII-like layout in your CSS file.</p>
+            </div>
+            <div class="grid-item area-footer">
+                <h3>Box 4 (Footer)</h3>
+                <p><strong>What is a dot (.) in areas?</strong></p>
+                <p>A dot represents an empty cell in the <code>grid-template-areas</code> string.</p>
+            </div>
+            <div class="grid-item area-extra">
+                <h3>Box 5</h3>
+                <p><strong>Spanning in areas?</strong></p>
+                <p>Items span multiple cells by repeating the area name in the template string.</p>
+            </div>
+            <div class="grid-item area-obs">
+                <h3>Box 6</h3>
+                <p><strong>Observation:</strong></p>
+                <p>The layout is controlled by names like 'header', 'sidebar', and 'footer' instead of numbers.</p>
+            </div>
+        </div>
     </main>
-
-    <section class="answers">
-        <h2>Answers</h2>
-        <div class="question-block">
-            <p><strong>1. What is grid-template-areas?</strong></p>
-            <p>It's a visual way to define the layout by giving names to sections of the grid and mapping them where
-                they should appear.</p>
-        </div>
-        <div class="question-block">
-            <p><strong>2. How do you make an area span multiple cells?</strong></p>
-            <p>By repeating the area name in the <code>grid-template-areas</code> string. For example:
-                <code>"header header header"</code> makes the header span 3 columns.</p>
-        </div>
-        <div class="question-block">
-            <p><strong>3. Why is this useful for rearranging layouts?</strong></p>
-            <p>Because you can change the entire structure for mobile or desktop just by changing the
-                <code>grid-template-areas</code> string in a media query, without changing the HTML.</p>
-        </div>
-    </section>
 </body>
 
 </html>

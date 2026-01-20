@@ -1,49 +1,86 @@
-/* GRID ROWS */
+/* TASK 4: GRID ROWS */
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fdfefe;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
     padding: 20px;
+    color: #333;
 }
 
 header {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
-/* 
-   GRID CONTAINER 
-   Defining specific row heights.
-*/
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* GRID CONTAINER */
 .grid-container {
     display: grid;
-    /* First row 100px, others based on content */
-    grid-template-rows: 100px auto auto;
-    gap: 15px;
-    background-color: #f1f1f1;
-    padding: 15px;
-    border: 2px solid #34495e;
+    /* 3 columns, 2 specific row heights */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 150px;
+    gap: 0;
+    border: 1px solid #000;
 }
 
 /* GRID ITEM STYLES */
 .grid-item {
-    background-color: #9b59b6;
-    color: white;
-    padding: 20px;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    color: #000;
+    padding: 15px;
+    border: 1px solid #000;
+    text-align: left;
 }
 
-/* ANSWERS SECTION */
-.answers {
-    margin-top: 40px;
-    background-color: #fff;
-    padding: 25px;
-    border-top: 6px solid #9b59b6;
-    border-radius: 4px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+/* Colors for each box */
+.grid-item:nth-child(1) {
+    background-color: #ffcccc;
+}
+
+/* Red */
+.grid-item:nth-child(2) {
+    background-color: #ffffcc;
+}
+
+/* Yellow */
+.grid-item:nth-child(3) {
+    background-color: #ccffcc;
+}
+
+/* Green */
+.grid-item:nth-child(4) {
+    background-color: #ccccff;
+}
+
+/* Blue */
+.grid-item:nth-child(5) {
+    background-color: #ffebcc;
+}
+
+/* Orange */
+.grid-item:nth-child(6) {
+    background-color: #f2ccff;
+}
+
+/* Purple */
+
+.grid-item h3 {
+    margin-top: 0;
+    font-size: 1.1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 5px;
+}
+
+.grid-item p {
+    margin: 10px 0 0 0;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.grid-item strong {
+    display: block;
+    margin-bottom: 5px;
 }

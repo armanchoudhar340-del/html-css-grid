@@ -10,38 +10,47 @@
 
 <body>
     <header>
-        <h1>TASK 2: GRID CONTAINER – COLUMNS</h1>
         <p>Learn how to define specific columns using <code>grid-template-columns</code>.</p>
     </header>
 
     <main>
         <!-- The Grid Container -->
         <div class="grid-container">
-            <div class="grid-item color-1">Box 1</div>
-            <div class="grid-item color-2">Box 2</div>
-            <div class="grid-item color-3">Box 3</div>
-            <div class="grid-item color-4">Box 4</div>
-            <div class="grid-item color-5">Box 5</div>
-            <div class="grid-item color-6">Box 6</div>
+            <div class="grid-item">
+                <h3>Box 1</h3>
+                <p><strong>What does <code>fr</code> stand for?</strong></p>
+                <p><code>fr</code> means fractional unit. It divides the available space into parts so each column gets
+                    equal space.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Box 2</h3>
+                <p><strong>How many columns are created?</strong></p>
+                <p>Three columns are created because three <code>fr</code> values are used in
+                    <code>grid-template-columns</code>.
+                </p>
+            </div>
+            <div class="grid-item">
+                <h3>Box 3</h3>
+                <p><strong>What happens when the screen size is reduced?</strong></p>
+                <p>The columns shrink automatically and adjust according to the screen size.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Box 4</h3>
+                <p><strong>Do items overflow or adjust?</strong></p>
+                <p>The items adjust their width and stay inside the container instead of overflowing.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Box 5</h3>
+                <p><strong>Why is <code>fr</code> better than <code>px</code> for layouts?</strong></p>
+                <p><code>fr</code> is flexible and responsive, while <code>px</code> is fixed and does not adjust well
+                    on different screens.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Box 6</h3>
+                <p><strong>Observation:</strong></p>
+                <p>The boxes are arranged in three columns and resize smoothly when the browser window is resized.</p>
+            </div>
         </div>
-
-        <section class="answers">
-            <h2>Answers</h2>
-            <div class="question-block">
-                <p><strong>1. What does '1fr' mean?</strong></p>
-                <p>'fr' stands for 'fractional unit'. <code>1fr</code> means one part of the available space.
-                    <code>1fr 1fr 1fr</code> divides the grid into 3 equal parts.</p>
-            </div>
-            <div class="question-block">
-                <p><strong>2. How do the boxes behave when you resize the window?</strong></p>
-                <p>Because we used <code>fr</code> units, the columns automatically grow or shrink to fill the window
-                    while always staying in 3 equal columns.</p>
-            </div>
-            <div class="question-block">
-                <p><strong>3. How do you create 4 columns instead of 3?</strong></p>
-                <p>You would change the CSS property to: <code>grid-template-columns: 1fr 1fr 1fr 1fr;</code></p>
-            </div>
-        </section>
     </main>
 </body>
 

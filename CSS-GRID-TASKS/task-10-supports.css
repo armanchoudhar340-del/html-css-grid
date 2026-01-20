@@ -1,9 +1,10 @@
-/* CSS @supports */
+/* TASK 10: SUPPORTS QUERY */
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 30px;
-    background-color: #f4f7f6;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    padding: 20px;
+    color: #333;
 }
 
 header {
@@ -11,51 +12,96 @@ header {
     margin-bottom: 40px;
 }
 
-/* 
-   FALLBACK STYLES 
-   These styles apply to EVERY browser (including old ones).
-   We use normal block display or flexbox as a basic fallback.
-*/
-.test-container {
-    background-color: white;
-    padding: 20px;
-    border: 2px solid #ccc;
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
 
-.grid-card {
-    background-color: #e67e22;
-    color: white;
-    padding: 20px;
+/* FALLBACK STYLE (Default) */
+.grid-container {
+    display: block;
+    /* Stack items by default */
+}
+
+.grid-item {
+    color: #000;
+    padding: 15px;
+    border: 1px solid #000;
     margin-bottom: 10px;
-    /* Fallback margin for old browsers */
+}
+
+.fallback-msg {
+    display: block;
     text-align: center;
+    color: #e74c3c;
     font-weight: bold;
 }
 
-/* 
-   MODERN STYLES 
-   This code only runs if the browser supports CSS Grid.
-*/
+/* Colors for each box */
+.grid-item:nth-child(1) {
+    background-color: #ffcccc;
+}
+
+/* Red */
+.grid-item:nth-child(2) {
+    background-color: #ffffcc;
+}
+
+/* Yellow */
+.grid-item:nth-child(3) {
+    background-color: #ccffcc;
+}
+
+/* Green */
+.grid-item:nth-child(4) {
+    background-color: #ccccff;
+}
+
+/* Blue */
+.grid-item:nth-child(5) {
+    background-color: #ffebcc;
+}
+
+/* Orange */
+.grid-item:nth-child(6) {
+    background-color: #f2ccff;
+}
+
+/* Purple */
+
+/* GRID STYLE (Used only if supported) */
 @supports (display: grid) {
-    .test-container {
+    .grid-container {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0;
+        border: 1px solid #000;
     }
 
-    .grid-card {
+    .grid-item {
         margin-bottom: 0;
-        /* Clear the fallback margin */
-        background-color: #27ae60;
-        /* Change color to show Grid is active */
+        border: 1px solid #000;
+    }
+
+    .fallback-msg {
+        display: none;
     }
 }
 
-/* ANSWERS SECTION */
-.answers {
-    margin-top: 50px;
-    background: #fff;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+.grid-item h3 {
+    margin-top: 0;
+    font-size: 1.1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 5px;
+}
+
+.grid-item p {
+    margin: 10px 0 0 0;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.grid-item strong {
+    display: block;
+    margin-bottom: 5px;
 }

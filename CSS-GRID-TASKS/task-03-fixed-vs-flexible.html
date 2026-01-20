@@ -10,43 +10,46 @@
 
 <body>
     <header>
-        <h1>TASK 3: FIXED vs FLEXIBLE COLUMNS</h1>
-        <p>Compare how <code>px</code> (Fixed) and <code>fr</code> (Flexible) units behave.</p>
+        <p>Compare how <code>px</code> (Fixed) and <code>fr</code> (Flexible) units behave in a single grid.</p>
     </header>
 
     <main>
-        <h2>1. Fixed Layout (200px columns)</h2>
-        <div class="grid-fixed">
-            <div class="item fixed">Fixed 200px</div>
-            <div class="item fixed">Fixed 200px</div>
-            <div class="item fixed">Fixed 200px</div>
+        <!-- The Grid Container -->
+        <div class="grid-container">
+            <div class="grid-item">
+                <h3>Box 1</h3>
+                <p><strong>What is a fixed column?</strong></p>
+                <p>A column with a set width, like 200px, that does not change size when the window is resized.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Box 2</h3>
+                <p><strong>What is a flexible column?</strong></p>
+                <p>A column that uses <code>fr</code> units to take up a fraction of the remaining space in the
+                    container.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Box 3</h3>
+                <p><strong>What happens with mixed units?</strong></p>
+                <p>In <code>200px 1fr 1fr</code>, the first column stays at 200px, and the rest of the space is split
+                    equally.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Box 4</h3>
+                <p><strong>Why use fixed columns?</strong></p>
+                <p>They are useful for sidebars or elements that require a specific, unchanging width.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Box 5</h3>
+                <p><strong>Can we mix units?</strong></p>
+                <p>Yes! You can combine <code>px</code>, <code>%</code>, and <code>fr</code> in your grid-template
+                    definitions.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Box 6</h3>
+                <p><strong>Observation:</strong></p>
+                <p>The flexible columns adjust while the fixed one remains constant as you resize the browser.</p>
+            </div>
         </div>
-
-        <h2 style="margin-top: 40px;">2. Flexible Layout (1fr columns)</h2>
-        <div class="grid-flexible">
-            <div class="item flexible">Flexible 1fr</div>
-            <div class="item flexible">Flexible 1fr</div>
-            <div class="item flexible">Flexible 1fr</div>
-        </div>
-
-        <section class="answers">
-            <h2>Answers</h2>
-            <div class="question-block">
-                <p><strong>1. What happens to Fixed columns when the screen is small?</strong></p>
-                <p>They stay at 200px no matter what. If the screen is too narrow, they will cause a scrollbar or get
-                    cut off because they cannot shrink.</p>
-            </div>
-            <div class="question-block">
-                <p><strong>2. Why is 'fr' better for responsive design?</strong></p>
-                <p>'fr' units allow columns to resize proportionally to fill the available space. They never overflow
-                    the container because they are based on percentage logic.</p>
-            </div>
-            <div class="question-block">
-                <p><strong>3. Can you mix fixed and flexible units?</strong></p>
-                <p>Yes! You can use <code>200px 1fr 1fr</code>. The first column will be fixed, and the other two will
-                    share the remaining space.</p>
-            </div>
-        </section>
     </main>
 </body>
 

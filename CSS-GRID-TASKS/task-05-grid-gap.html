@@ -4,47 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 5: Grid Gaps</title>
+    <title>Task 5: Grid Gap</title>
     <link rel="stylesheet" href="task-05-grid-gap.css">
 </head>
 
 <body>
     <header>
-        <h1>TASK 5: GRID GAPS</h1>
-        <p>Learn how to use the <code>gap</code> property to create space between items.</p>
+        <p>Learn how to add space between grid items using the <code>gap</code> property.</p>
     </header>
 
     <main>
-        <h3>Example: Grid with 20px Gap</h3>
         <!-- The Grid Container -->
         <div class="grid-container">
-            <div class="grid-item">1</div>
-            <div class="grid-item">2</div>
-            <div class="grid-item">3</div>
-            <div class="grid-item">4</div>
-            <div class="grid-item">5</div>
-            <div class="grid-item">6</div>
+            <div class="grid-item">
+                <h3>Box 1</h3>
+                <p><strong>What does <code>gap</code> do?</strong></p>
+                <p>It adds space (gutters) between grid items, making the layout cleaner.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Box 2</h3>
+                <p><strong>Can we set row gap only?</strong></p>
+                <p>Yes, <code>row-gap</code> adds space only between the horizontal rows.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Box 3</h3>
+                <p><strong>Can we set column gap only?</strong></p>
+                <p>Yes, <code>column-gap</code> adds space only between the vertical columns.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Box 4</h3>
+                <p><strong>What is the shorthand?</strong></p>
+                <p><code>gap: 20px 10px;</code> sets row gap to 20px and column gap to 10px.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Box 5</h3>
+                <p><strong>Does gap add outer space?</strong></p>
+                <p>No, <code>gap</code> only adds space BETWEEN items, not on the outer edges of the container.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Box 6</h3>
+                <p><strong>Observation:</strong></p>
+                <p>The items are now separated by clear spacing, improving readability and design.</p>
+            </div>
         </div>
-
-        <section class="answers">
-            <h2>Answers</h2>
-            <div class="question-block">
-                <p><strong>1. What does the 'gap' property do?</strong></p>
-                <p>The <code>gap</code> property creates empty space between grid items (rows and columns). It does NOT
-                    add space around the outside of the container.</p>
-            </div>
-            <div class="question-block">
-                <p><strong>2. What is the difference between 'gap' and 'margin'?</strong></p>
-                <p><code>margin</code> adds space outside of an element's border. <code>gap</code> is applied to the
-                    container and only adds space between the children (gutters), making it more consistent for layouts.
-                </p>
-            </div>
-            <div class="question-block">
-                <p><strong>3. Can you have different gaps for rows and columns?</strong></p>
-                <p>Yes! You can use <code>row-gap: 10px;</code> and <code>column-gap: 30px;</code> or the shorthand
-                    <code>gap: 10px 30px;</code> (row column).</p>
-            </div>
-        </section>
     </main>
 </body>
 
